@@ -1,0 +1,32 @@
+
+
+select * from HR.DEPARTMENTS
+----parent table-------
+CREATE TABLE hr.Depart
+(
+depart_id number(3) constraint d_pk primary key,
+depart_name varchar(30),
+
+);
+
+
+-------child table-----
+create table hr.emp
+(
+emp_id number constraint e_pk primary key,
+emp_name varchar(20),
+emp_salary number(30),
+depart_id number(3) constraint d_fk references HR.DEPART (depart_id)
+
+);
+
+select * from HR.DEPART
+
+select * from HR.emp
+insert into HR.emp values(4,'Kariz',5000,null)
+drop table HR.Depart 
+
+insert into HR.DEPART values (102,'IS','KHI')
+insert into HR.EMP values (4,'Hamza',5000,101)
+
+alter table HR.DEPART add (depart_place varchar(20))

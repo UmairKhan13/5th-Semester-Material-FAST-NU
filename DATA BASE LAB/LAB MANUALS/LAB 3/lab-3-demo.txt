@@ -1,0 +1,66 @@
+select * from hr.departments;
+
+-----------DML STATEMENTS ------------
+
+----------Data Manipulation Language---------
+
+-- It performs operations on data------------
+
+-----Primry key -----------
+
+----Insert Command ---------
+
+insert into hr.departments values(280,'Information system',null,1700)
+
+--- Delete Command -----------
+
+delete from hr.departments where department_id = 280
+
+------ Update Command ------------
+
+update hr.departments set department_name = 'CS Departemnt' where department_id = 220
+
+
+------------ DDL statements ----------
+
+--- Data Defination Langugae --------------
+
+----------create,alter ,drop ----------
+
+create table hr.studs
+(
+ stud_id number constraint p_key primary key,
+ stud_name varchar(20) not null,
+ stud_email varchar(30) constraint e_id unique,
+ stud_fee number not null
+ );
+ 
+ alter table hr.studs drop column stud_email 
+ 
+ select * from hr.studs
+ 
+ drop table HR.STUDS
+ 
+ insert into hr.studs values(1,'Arif',null ,1000)
+ 
+ 
+  
+ select * from HR.STUDS;
+ 
+ insert into HR.STUNDENTS values(2,'Babar',1000)
+ 
+ alter table HR.STUNDENTS rename to studs
+ 
+ alter table HR.STUDS add (stud_age number) 
+ 
+ update HR.STUDS set stud_age = 18 where stud_id = 1
+ 
+ drop table HR.STUDS purge
+ 
+ 
+ 
+ ---------Logical Operators ---------
+ 
+ ------AND OR NOT ------------
+ 
+ select first_name,salary from hr.employees  where salary >= 3000 or salary <= 6000;

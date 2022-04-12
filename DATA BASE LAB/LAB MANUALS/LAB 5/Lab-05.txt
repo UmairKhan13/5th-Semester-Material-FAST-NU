@@ -1,0 +1,65 @@
+CREATE Table Hr.Emp
+(
+emp_id number constraint e_pk primary key,
+emp_name varchar(20),
+emp_salary number(20),
+emp_age number(20),
+emp_gender varchar(20),
+emp_department varchar(20)
+);
+
+SELECT * from HR.Emp
+INSERT into HR.Emp Values(1,'Dr Zulafqar',80000,35,'Male','Operations');
+INSERT into HR.Emp Values(2,'Ms Tania',60000,30,'Female','Support');
+INSERT into HR.Emp Values(3,'Ms Anum',60000,30,'Female','Analysist');
+INSERT into HR.Emp Values(4,'Ms Farah Sadia',60000,25,'Female','Analysist');
+INSERT into HR.Emp Values(5,'Muhammad Nadeem',50000,27,'Male','Sales');
+INSERT into HR.Emp Values(6,'Muhammad Faheem',50000,28,'Male','Operations');
+
+
+CREATE Table Hr.Dept
+(
+dept_id number constraint d_pk primary key,
+dept_name varchar(20),
+dept_location varchar(20)
+);
+
+select * from HR.DEPT
+insert into hr.dept values(1,'Content','New Yark');
+insert into hr.dept values(2,'Support','Chicago');
+insert into hr.dept values(3,'Analysist','New Yark');
+insert into hr.dept values(4,'Sales','Boston');
+insert into hr.dept values(5,'Tech','Dallas');
+insert into hr.dept values(6,'Finance','Chicago');
+
+
+-----both records match table1 and table2-----
+-----all left and match records table 2----
+-----all right and match records table 1----
+--all record table 1 and table 2----
+Select 
+HR.EMP.emp_name,HR.EMP.EMP_DEPARTMENT,
+HR.DEPT.DEPT_NAME,HR.DEPT.DEPT_LOCATION
+from HR.EMP
+full join HR.DEPT 
+ON hr.emp.emp_department=hr.Dept.dept_name;
+
+select * from hr.emp cross join hr.dept;
+select * from hr.emp;
+select * from hr.dept;
+select * from HR.EMPLOYEES;
+
+
+select 
+
+
+
+
+
+
+
+drop table HR.dept
+
+
+
+

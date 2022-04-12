@@ -1,0 +1,38 @@
+create table HR.StudentsDetalis2
+(
+stud_id number constraint s2_pk primary key,
+stud_name varchar(20),
+stud_marks number(20)
+);
+
+select * from HR.STUDENTSDETALIS2;
+insert into HR.STUDENTSDETALIS2 values(3,'Fahad Tahir',92);
+insert into HR.STUDENTSDETALIS2 values(4,'Hiba',73);
+insert into HR.STUDENTSDETALIS2 values(5,'Matt',65);
+
+select * from HR.STUDENTSDETALIS1
+INTERSECT
+select * from HR.STUDENTSDETALIS2
+
+drop table HR.STUDENTSDETALIS2;
+
+select * from  HR.EMP
+select * from HR.DEPT
+
+------update using Join------
+update HR.EMP
+set emp_age=10
+from HR.EMP
+join HR.DEPT 
+ON hr.emp.emp_department=hr.Dept.dept_name
+where dept_location = 'New Yark';
+
+
+Select 
+HR.EMP.emp_name,HR.EMP.EMP_DEPARTMENT,
+HR.DEPT.DEPT_NAME,HR.DEPT.DEPT_LOCATION
+from HR.EMP
+ join HR.DEPT 
+ON hr.emp.emp_department=hr.Dept.dept_name;
+
+

@@ -1,0 +1,248 @@
+SELECT FIRST_NAME,SALARY,SALARY + 1000 AS BONUS FROM HR.EMPLOYEES;
+
+SELECT * FROM HR.EMPLOYEES WHERE SALARY < 3000;
+
+SELECT * FROM HR.EMPLOYEES WHERE FIRST_NAME LIKE '%nn';
+
+SELECT MOD(5,2) FROM DUAL
+
+------------- GROUP FUNCTIONS---------------
+---COUNT,AVG,MAX,MIN,SUM-------
+
+SELECT TRUNC(AVG(SALARY),1) FROM HR.EMPLOYEES
+
+
+-------Numeric Functions---------
+----ABS,TRUNC,ROUND-----
+
+Select ABS(10.6456) from dual;
+Select TRUNC(10.6565,1) from dual;
+Select ROUND(650.6565,2) from dual;
+
+-------Character OR Text Functions----
+select RPAD('pakistan',12,'*')from dual;
+select LTRIM('Good Morning','Good')from dual;
+select RTRIM('Good Morning','Morning')from dual;
+select LTRIM('PAKISTAN','PAK')from dual;
+select RTRIM('PAKISTAN','ISTAN')from dual;
+
+select SUBSTR('PAKISTAN',4,8)from dual;
+
+
+Select ADD_MONTHS ('10-sep-2020',3)from dual;
+Select MONTHS_BETWEEN ('10-dec-2020','10-sep-2020')from dual;
+Select Last_day('01-dec-1990')from dual;
+Select sysdate from dual;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT FIRST_NAME,SALARY,SALARY + 1000 AS BONUS FROM HR.EMPLOYEES;
+
+SELECT * FROM HR.EMPLOYEES WHERE SALARY < 3000;
+
+SELECT * FROM HR.EMPLOYEES WHERE FIRST_NAME LIKE '%nn';
+
+SELECT MOD(5,2) FROM DUAL
+
+------------- GROUP FUNCTIONS---------------
+---COUNT,AVG,MAX,MIN,SUM-------
+
+SELECT TRUNC(AVG(SALARY),1) FROM HR.EMPLOYEES
+
+
+
+SELECT FIRST_NAME,SALARY,SALARY + 1000 AS BONUS FROM HR.EMPLOYEES;
+
+SELECT * FROM HR.EMPLOYEES WHERE SALARY < 3000;
+
+SELECT * FROM HR.EMPLOYEES WHERE FIRST_NAME LIKE '%nn';
+
+SELECT MOD(5,2) FROM DUAL
+
+------------- GROUP FUNCTIONS---------------
+---COUNT,AVG,MAX,MIN,SUM-------
+
+SELECT TRUNC(AVG(SALARY),1) FROM HR.EMPLOYEES
+
+
+-------Numeric Functions---------
+----ABS,TRUNC,ROUND-----
+
+Select ABS(10.6456) from dual;
+Select TRUNC(10.6565,1) from dual;
+Select ROUND(650.6565,2) from dual;
+
+-------Character OR Text Functions----
+select RPAD('pakistan',12,'*')from dual;
+select LTRIM('Good Morning','Good')from dual;
+select RTRIM('Good Morning','Morning')from dual;
+select LTRIM('PAKISTAN','PAK')from dual;
+select RTRIM('PAKISTAN','ISTAN')from dual;
+
+select SUBSTR('PAKISTAN',4,8)from dual;
+
+
+Select ADD_MONTHS ('10-sep-2020',3)from dual;
+Select MONTHS_BETWEEN ('10-dec-2020','10-sep-2020')from dual;
+Select Last_day('01-dec-1990')from dual;
+Select sysdate from dual;
+select To_Char(567890.50,'$9,99,9999')from dual;
+select sysdate from dual;
+select To_Char(Sysdate,'Day,Month,YYYY')from dual;
+select Count (*) from dual;
+
+select * from dual;
+select count(*) from dual;
+
+
+-------Numeric Function-----
+---ABS,ROUND,TRUNC------
+
+select abs(-10.3) from dual;
+Select ROUND (120.345,2) from dual;
+
+-------Character OR Text Functions------
+UPPER, LOWER, 
+
+Select SUBSTR('PAKISTAN',2,3) from dual;
+
+--------Date Functions------
+
+select Months_Between('10-feb-2020','10-sep-2020') from dual;
+select ADD_Months('10-feb-2020',3) from dual;
+
+select LAST_Day('01-dec-1990') from dual;
+
+
+select To_Date('10-sep-2020') from dual;
+
+Select To_Char(Sysdate, 'day, month,yyyy') from dual;
+
+
+select first_name, salary from HR.EMPLOYEES Where 
+
+((salary*0.2)+ salary)
+
+select count (*) from HR.EMPLOYEES;
+
+select last_name from HR.EMPLOYEES where ASCII(SUBSTR('last_name',1,1)=76;
+
+select first_name from HR.EMPLOYEES where first_name like '%nn'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
